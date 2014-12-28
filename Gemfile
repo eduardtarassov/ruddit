@@ -46,3 +46,6 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 
 # Add voting settings
 gem 'acts_as_votable', '~> 0.10.0'
+
+# Easy forming for comments
+gem 'simple_form', '~> 3.1.0'
