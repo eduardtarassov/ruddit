@@ -43,3 +43,6 @@ gem 'devise', '~> 3.4.1'
 
 # Add some styling
 gem 'bootstrap-sass', '~> 3.3.1.0'
+
+# Add voting settings
+gem 'acts_as_votable', '~> 0.10.0'
