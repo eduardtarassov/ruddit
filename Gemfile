@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 # Provides user authentication
 gem 'devise', '~> 3.4.1'
+
+# Add some styling
+gem 'bootstrap-sass', '~> 3.3.1.0'
