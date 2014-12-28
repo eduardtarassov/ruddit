@@ -21,15 +21,18 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment.destroy
-    respond_with(@comment)
+    respond_to do |format|
+      format.html { redirect_to :back, notice: 'Comment was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
   private
-    def set_comment
-      @comment = Comment.find(params[:id])
-    end
+  def set_comment
+    @comment = Comment.find(params[:id])
+  end
 
-    def comment_params
-      params.require(:comment).permit(:link_id, :body, :user_id)
-    end
+  def comment_params
+    params.require(:comment).permit(:link_id, :body, :user_id)
+  end
 end
